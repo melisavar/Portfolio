@@ -1,0 +1,264 @@
+body {
+  transition: background-color 0.5s;
+  display:flex;
+  flex-direction: column;
+  font-family: 'Californian FB', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  
+  text-align: center;
+  padding: 0;
+}
+
+
+.formBox {
+	     display:flex;
+		 flex-wrap:space-around;
+		 color:white;
+		 max-width: 500px;
+         margin: 20px auto;
+         padding: 20px;
+         border: 1px solid black;
+         border-radius: 10px;
+         background-color: black;
+		 
+	 }
+	 
+form {
+	margin : 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+	 
+	 
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #222222; 
+}
+
+.navigation ul li {
+    float: left; 
+}
+
+.navigation ol li{
+	background-color: #222222;
+	float: right;
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	
+}
+.navigation ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navigation ul li a:hover {
+    background-color: #333; 
+}
+
+#profile ul{
+	display: flex;
+	list-style:none;
+	padding:4px;
+	flex-direction: column;
+}
+
+ul > skills{
+	
+	display:flex;
+    list-style:square;
+	padding:4px;
+	flex-direction:column;
+	margin-left:20px;
+	
+	
+}
+
+ol > skills {
+	display:flex;
+    list-style: decimal;
+	flex-direction: column;
+	text-align: center;
+	
+    }
+
+   
+   p::first-line{
+	   font-weight: bold;
+   }
+
+   th,td{
+	   padding:10px;
+	   text-align: center;
+   }
+
+#profile{
+	font-family: 'Californian FB', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #D2B48C;
+	margin: auto;
+	text-align: center;
+	border: solid 2px;
+
+	
+}
+
+#image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.images img:hover {
+   background-color: white;
+}
+
+.images img{
+  
+  width: 500px;
+  height: auto;
+  filter: grayscale(50%);
+  opacity: 0.8;
+  border: 3px solid grey;
+  padding: 2px;
+  margin: 3px;
+}
+.skills-content{
+	text-align: centre;
+	margin: 10px auto;
+	margin-left: 400px;
+	
+}
+#data {
+	width: 200px;
+	margin-left:200px;
+	
+}
+
+a:hover{
+	color: #ff0000;
+	text-decoration: underline;
+	
+}
+	 
+	 
+ #phone , #mail{
+	width:15px;
+}
+	 
+	 
+	 
+footer{
+    margin-top:auto;
+    background-color:#222222;
+    text-align:right;
+    padding:0;
+}
+	 
+	 .grid-container {
+		 display:grid;
+		 column-gap:30px;
+		 
+	 }
+	 
+	 .grids-blog{
+		 display: inline-grid;
+		 column-gap: 50px;
+		 row-gap:20px;
+		 grid-template-areas: Experiences;
+		 
+	 }
+	 
+	 
+
+@media (max-width: 600px) {
+  body{
+	display: flex;
+    flex-direction: column;
+	justify-content: space-between;
+    align-items: center;
+	flex: 1 0 auto;
+
+}
+
+/* Tablets (between 601px - 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  body {
+    display: flex;
+    flex-direction: row;
+	justify-content: space-between;
+    align-items: center;
+	
+}
+
+/* Desktops (min 901px)*/
+@media (min-width: 901px) {
+  body {
+	display: flex;
+    flex-direction: row;
+	justify-content: space-between;
+    align-items: center;
+  
+}
+	 
+
+html {
+  height: 100%;
+}
+
+table{
+	border: 1px solid black;
+	
+}
+ #notification {
+            position: fixed;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: none;
+        }
